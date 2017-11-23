@@ -424,7 +424,6 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -455,7 +454,9 @@ a {
     text-decoration: none; }
 
 /* Small menu. */
-.menu-toggle,
+.menu-toggle {
+  display: none; }
+
 .main-navigation.toggled ul {
   display: block; }
 
@@ -589,3 +590,58 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+.site-footer {
+  margin-top: 100px; }
+
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .main-navigation .brought {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+  .main-navigation .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .main-navigation .menu a {
+      padding-right: 15px; }
+
+.home {
+  background: black; }
+
+.site-info a {
+  display: none; }
+
+.site-description {
+  display: none; }
+
+.nav-previous {
+  display: none; }
+
+.entry-title {
+  color: #fff; }
+
+.quote-container p {
+  color: #fff; }
+
+.brought .red {
+  display: inline; }
+
+.title-link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px; }
+  .title-link-container p {
+    padding-right: 3px;
+    margin: 0; }
+  .title-link-container a {
+    margin-top: 5px; }

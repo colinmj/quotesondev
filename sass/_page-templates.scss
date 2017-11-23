@@ -5,3 +5,31 @@
 /* All Archives Page */
 
 /* Submit a Quote Page */
+  
+
+
+//Mobile
+
+
+.site-footer {
+
+  margin-top: 100px;
+}
+
+
+.main-navigation {
+  display: flex;
+  flex-wrap: wrap;
+
+  .brought {
+    flex-basis: 100%;
+  }
+
+   .menu {
+     display: flex;
+     a {
+       
+       padding-right: 15px;
+     }
+   }
+}

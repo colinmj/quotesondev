@@ -24,8 +24,11 @@
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					
 				</div><!-- .site-branding -->
-
+        </div class="logo">
+						<img src="<?php echo get_template_directory_uri() . '/images/qod-logo.svg'?>"/>
+				</div>
 			
 			</header><!-- #masthead -->
 

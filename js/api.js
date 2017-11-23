@@ -22,12 +22,12 @@
            
 
           $('.quote-container').html(quote);
-          $('.entry-title').html('&mdash;' + title);
+          $('.entry-title').html('<p>&mdash; ' + title + '</p>');
 
           if (link) {
-          $('.entry-source-link').html('<a href="' + link + '">' + source + '</a>');
+          $('.entry-source-link').html('<a href="' + link + '"> ,' + source + '</a>');
           } else {
-          $('entry-source').html(source);
+          $('entry-source').html(',' + source);
           }
         });
     });

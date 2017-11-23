@@ -13,13 +13,16 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  
  <div class="quote-container"></div>
- 
- <div class="entry-source-link"></div>
- <div class="entry-source"></div>
 
+<div class="title-link-container">
+	<div class="entry-title"></div>
+	<div class="entry-source-link"></div>
+	<div class="entry-source"></div>
+</div>
 
 	<div class="entry-meta">
-	  <?php  the_title( '<h2 class="entry-title">&mdash; ', '</h2' ); ?>
+		
+	
 
 		<?php if( $source && $source_url ): ?>
 
@@ -43,7 +46,7 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 
 
 <?php if( is_home() || is_single() ):  ?>
-
-		<button type="button" id="new-quote-button">Show Me Another!</button>
-
+   <div class="show-button-container">
+		 <button type="button" id="new-quote-button">Show Me Another!</button>
+   </div>
 <?php endif; ?>

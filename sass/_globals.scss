@@ -1,0 +1,54 @@
+.home {
+  background: black;
+}
+
+
+.site-info {
+  a {
+    display: none;
+  }
+}
+
+.site-description {
+  display: none;
+}
+
+.nav-previous {
+  display: none;
+}
+
+.entry-title {
+  color: #fff;
+}
+
+.quote-container {
+  p {
+    color: #fff;
+  }
+}
+
+.brought {
+
+  .red {
+  display: inline;
+  }
+
+}
+
+
+.title-link-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-top: 80px;
+  
+
+   p {
+     padding-right: 3px;
+     margin: 0;
+   }
+  
+   a {
+     margin-top: 5px;
+   }
+}
