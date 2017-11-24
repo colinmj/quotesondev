@@ -84,7 +84,7 @@
 
 
 //position for full width
-.content-wrapper, .entry-meta {
+.content-wrapper {
   @include desktop {
     
     max-width: 600px;
@@ -101,10 +101,47 @@
 }
 
 
-.meta-content {
-  p {
-    @include desktop {
-      font-size: 25px;
-    }
+// .meta-content {
+//   p {
+//     @include desktop {
+//       font-size: 25px;
+//     }
+//   }
+// }
+
+
+
+
+
+//quotes
+
+.entry-meta {
+  display: flex;
+  flex-direction: row;
+  
+
+  @include desktop {
+    margin: 0 auto;
+    // max-width: 600px;
+    width: auto;
+    justify-content: space-around;
   }
+
+
+   .meta-content {
+    
+     display: flex;
+     flex-direction: column;
+     max-width: 600px;
+
+     @include desktop {
+       font-size: 25px;
+     }
+
+
+     .meta-container {
+       display: flex;
+       font-size: 16px;
+     }
+   }
 }

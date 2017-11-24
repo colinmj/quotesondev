@@ -14,8 +14,9 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
  
 <div class="content-wrapper">
 
+    <div class="left-quote"></div>
 		<div class="quote-container"></div>
-
+		<div class="right-quote"></div>
 		<div class="title-link-container hide">
 			<div class="entry-title"></div>
 			<div class="entry-source-link"></div>
@@ -24,13 +25,19 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 
 </div>
 
-	<div class="entry-meta">
+<div class="entry-meta">
+
+   <div class="left-quote">
+			<!-- <i class="fa fa-quote-left" aria-hidden="true"></i> -->
+	 </div><!-- left-quote -->
 
 	<div class="meta-content">
-	<?php the_content();?>
-	</div>
+	
+		<?php the_content();?>
+   
 	
 	<div class="meta-container">	
+
 	 <?php  the_title( '<p class="initial-title">&mdash; ', '</p' ); ?>
 
 		<?php if( $source && $source_url ): ?>
@@ -44,13 +51,20 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 
     <?php else: ?>
 		<span class="source"></span>
-  </div>
-		<?php endif; ?>
-	</div>
 
- 
+	<?php endif; ?>
 
-	  
+	</div><!-- meta-container -->
+
+	</div><!-- meta content -->
+
+		<div class="right-quote">
+				<!-- <i class="fa fa-quote-right" aria-hidden="true"></i> -->
+		</div><!-- right-quote -->
+
+	</div><!-- entry-meta -->
+
+
 </article><!-- #post-## -->
 
 
