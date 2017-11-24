@@ -26,7 +26,8 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 					
 				</div><!-- .site-branding -->
-        </div class="logo">
+
+        <div class="logo">
 						<img src="<?php echo get_template_directory_uri() . '/images/qod-logo.svg'?>"/>
 				</div>
 			

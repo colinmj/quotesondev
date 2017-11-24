@@ -590,6 +590,9 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+.home {
+  padding-left: 15px; }
+
 .site-footer {
   margin-top: 100px; }
 
@@ -608,6 +611,11 @@ object {
     display: flex; }
     .main-navigation .menu a {
       padding-right: 15px; }
+
+.logo {
+  padding-top: 30px; }
+  .logo img {
+    max-width: 75%; }
 
 .home {
   background: black; }
@@ -639,7 +647,8 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 80px; }
+  margin-top: 30px;
+  margin-bottom: 50px; }
   .title-link-container p {
     padding-right: 3px;
     margin: 0; }
