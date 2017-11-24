@@ -592,6 +592,9 @@ object {
 /* Submit a Quote Page */
 .home {
   padding-left: 30px; }
+  @media all and (min-width: 1080px) {
+    .home {
+      padding-left: 0; } }
 
 .site-footer {
   margin-top: 100px; }
@@ -698,9 +701,23 @@ object {
       display: -ms-flexbox;
       display: flex;
       font-size: 16px; }
+      .entry-meta .meta-content .meta-container .meta-source-para {
+        max-width: 180px; }
+        @media all and (min-width: 620px) {
+          .entry-meta .meta-content .meta-container .meta-source-para {
+            max-width: 600px; } }
+
+.left-quote, .right-quote {
+  display: none; }
+  @media all and (min-width: 1080px) {
+    .left-quote, .right-quote {
+      display: inline; }
+      .left-quote i, .right-quote i {
+        color: green;
+        font-size: 100px; } }
 
 .home {
-  background: black; }
+  background: gray; }
 
 .site-info a {
   display: none; }
@@ -736,11 +753,6 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 30px;
   margin-bottom: 50px; }
   .title-link-container p, .meta-container p {
@@ -754,3 +766,17 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.initial-title {
+  width: auto; }
+
+.entry-title {
+  width: auto;
+  height: auto;
+  max-height: 20px; }
+
+.entry-source {
+  max-width: 220px; }
+  @media all and (min-width: 620px) {
+    .entry-source {
+      max-width: 600px; } }

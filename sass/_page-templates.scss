@@ -12,6 +12,10 @@
 
 .home {
   padding-left: 30px;
+
+  @include desktop {
+    padding-left: 0;
+  }
 }
 
 .site-footer {
@@ -142,6 +146,28 @@
      .meta-container {
        display: flex;
        font-size: 16px;
+
+        .meta-source-para {
+          max-width: 180px;
+
+          @include tablet {
+            max-width: 600px;
+          }
+        }
      }
    }
+}
+
+
+.left-quote, .right-quote {
+  display: none;
+
+
+  @include desktop {
+    display: inline;
+    i {
+      color: green;
+      font-size: 100px;
+    }
+  }
 }

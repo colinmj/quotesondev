@@ -4,20 +4,26 @@
  *
  * @package QOD_Starter_Theme
  */
-
 $source = get_post_meta(  get_the_ID(), '_qod_quote_source', true);
 $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  
 <div class="content-wrapper">
+	 
+   <div class="ultra-container hide">
+			<div class="left-quote">
+				<i class="fa fa-quote-left" aria-hidden="true"></i>
+		  </div>
+			<div class="quote-container"></div>
 
-    <div class="left-quote"></div>
-		<div class="quote-container"></div>
-		<div class="right-quote"></div>
-		<div class="title-link-container hide">
+			<div class="right-quote">
+			  <i class="fa fa-quote-right" aria-hidden="true"></i>
+     </div>
+			<!-- <i class="fa fa-quote-right" aria-hidden="true"></i> -->
+		</div>
+		<div class="title-link-container hide ">
 			<div class="entry-title"></div>
 			<div class="entry-source-link"></div>
 			<div class="entry-source"></div>
@@ -28,7 +34,7 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 <div class="entry-meta">
 
    <div class="left-quote">
-			<!-- <i class="fa fa-quote-left" aria-hidden="true"></i> -->
+			<i class="fa fa-quote-left" aria-hidden="true"></i>
 	 </div><!-- left-quote -->
 
 	<div class="meta-content">
@@ -47,7 +53,7 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 
 		<?php elseif( $source ):   ?>
 
-		<span class="source"> <?php echo $source; ?></span> 
+		<span class="source"> <p class="meta-source-para"><?php echo $source; ?></p></span> 
 
     <?php else: ?>
 		<span class="source"></span>
@@ -59,7 +65,7 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 	</div><!-- meta content -->
 
 		<div class="right-quote">
-				<!-- <i class="fa fa-quote-right" aria-hidden="true"></i> -->
+				<i class="fa fa-quote-right" aria-hidden="true"></i>
 		</div><!-- right-quote -->
 
 	</div><!-- entry-meta -->

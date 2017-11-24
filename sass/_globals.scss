@@ -2,7 +2,7 @@
 
 
 .home {
-  background: black;
+  background: gray;
 
 }
 
@@ -68,8 +68,8 @@
 
 .title-link-container, .meta-container {
   display: flex;
-  align-content: center;
-  align-items: center;
+  // align-content: center;
+  // align-items: center;
   margin-top: 30px;
   margin-bottom: 50px;
   
@@ -88,4 +88,32 @@
 
 .show {
   display: flex;
+}
+
+
+
+
+
+
+
+//Okay here is the styling for my refresh generated styles
+
+.initial-title {
+  width: auto;
+}
+
+//this is the on click
+.entry-title {
+  width: auto;
+  height: auto;
+  max-height: 20px;
+}
+
+//on click
+.entry-source {
+  max-width: 220px;
+
+  @include tablet {
+    max-width: 600px;
+  }
 }
