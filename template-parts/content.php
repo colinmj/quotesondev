@@ -12,17 +12,24 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  
- <div class="quote-container"></div>
+<div class="content-wrapper">
 
-<div class="title-link-container">
-	<div class="entry-title"></div>
-	<div class="entry-source-link"></div>
-	<div class="entry-source"></div>
+		<div class="quote-container"></div>
+
+		<div class="title-link-container hide">
+			<div class="entry-title"></div>
+			<div class="entry-source-link"></div>
+			<div class="entry-source"></div>
+		</div>
+
 </div>
 
 	<div class="entry-meta">
-		
-	
+
+	<?php the_content();?>
+
+	<div class="meta-container">	
+	 <?php  the_title( '<p class="initial-title">&mdash; ', '</p' ); ?>
 
 		<?php if( $source && $source_url ): ?>
 
@@ -35,7 +42,7 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 
     <?php else: ?>
 		<span class="source"></span>
-
+  </div>
 		<?php endif; ?>
 	</div>
 

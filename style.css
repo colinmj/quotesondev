@@ -591,10 +591,13 @@ object {
 /* All Archives Page */
 /* Submit a Quote Page */
 .home {
-  padding-left: 15px; }
+  padding-left: 30px; }
 
 .site-footer {
   margin-top: 100px; }
+
+.quote-container p {
+  max-width: 85%; }
 
 .main-navigation {
   display: -webkit-box;
@@ -602,9 +605,24 @@ object {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media all and (min-width: 1080px) {
+    .main-navigation {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
   .main-navigation .brought {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; }
+    @media all and (min-width: 620px) {
+      .main-navigation .brought {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; } }
+    @media all and (min-width: 1080px) {
+      .main-navigation .brought {
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%; } }
   .main-navigation .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -614,8 +632,40 @@ object {
 
 .logo {
   padding-top: 30px; }
+  @media all and (min-width: 1080px) {
+    .logo {
+      background: blue;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-top: 60px; } }
   .logo img {
     max-width: 75%; }
+    @media all and (min-width: 620px) {
+      .logo img {
+        max-width: 90%;
+        height: 80px; } }
+    @media all and (min-width: 1080px) {
+      .logo img {
+        height: 110px; } }
+
+@media all and (min-width: 1080px) {
+  .content-wrapper {
+    max-width: 400px;
+    width: auto;
+    margin: 0 auto; } }
+
+@media all and (min-width: 1080px) {
+  .show-button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 .home {
   background: black; }
@@ -632,13 +682,22 @@ object {
 .entry-title {
   color: #fff; }
 
-.quote-container p {
-  color: #fff; }
+.entry-meta p {
+  color: #fff;
+  max-width: 80%; }
+
+.quote-container, .meta-container {
+  color: white; }
+  .quote-container p, .meta-container p {
+    color: #fff; }
 
 .brought .red {
   display: inline; }
 
-.title-link-container {
+.content-wrapper {
+  margin-top: 30px; }
+
+.title-link-container, .meta-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -649,8 +708,14 @@ object {
           align-items: center;
   margin-top: 30px;
   margin-bottom: 50px; }
-  .title-link-container p {
+  .title-link-container p, .meta-container p {
     padding-right: 3px;
     margin: 0; }
-  .title-link-container a {
-    margin-top: 5px; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }

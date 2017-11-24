@@ -1,5 +1,9 @@
+
+
+
 .home {
   background: black;
+
 }
 
 
@@ -21,7 +25,16 @@
   color: #fff;
 }
 
-.quote-container {
+.entry-meta {
+  p {
+    color: #fff;
+    max-width: 80%;
+  }
+}
+
+.quote-container, .meta-container {
+
+  color: white;
   p {
     color: #fff;
   }
@@ -35,8 +48,12 @@
 
 }
 
+.content-wrapper {
+  margin-top: 30px;
+}
 
-.title-link-container {
+
+.title-link-container, .meta-container {
   display: flex;
   align-content: center;
   align-items: center;
@@ -49,7 +66,13 @@
      margin: 0;
    }
   
-   a {
-     margin-top: 5px;
-   }
+  
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
 }

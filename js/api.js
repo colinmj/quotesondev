@@ -5,6 +5,8 @@
        event.preventDefault();
        $('.entry-source-link').empty();
        $('.entry-source').empty();
+       $('.entry-meta').empty();
+       $('.title-link-container').addClass('show');
        
        $.ajax({
           method: 'get',
