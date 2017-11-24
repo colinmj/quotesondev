@@ -653,8 +653,8 @@ object {
         height: 110px; } }
 
 @media all and (min-width: 1080px) {
-  .content-wrapper {
-    max-width: 400px;
+  .content-wrapper, .entry-meta {
+    max-width: 600px;
     width: auto;
     margin: 0 auto; } }
 
@@ -666,6 +666,10 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; } }
+
+@media all and (min-width: 1080px) {
+  .meta-content p {
+    font-size: 25px; } }
 
 .home {
   background: black; }
@@ -686,10 +690,13 @@ object {
   color: #fff;
   max-width: 80%; }
 
-.quote-container, .meta-container {
+.quote-container {
   color: white; }
-  .quote-container p, .meta-container p {
+  .quote-container p {
     color: #fff; }
+    @media all and (min-width: 1080px) {
+      .quote-container p {
+        font-size: 25px; } }
 
 .brought .red {
   display: inline; }

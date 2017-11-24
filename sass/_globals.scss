@@ -29,16 +29,29 @@
   p {
     color: #fff;
     max-width: 80%;
-  }
-}
 
-.quote-container, .meta-container {
+
+    }
+  }
+
+
+
+
+
+.quote-container {
 
   color: white;
   p {
     color: #fff;
+
+    @include desktop {
+      font-size: 25px;
+    
+    }
   }
 }
+
+
 
 .brought {
 
