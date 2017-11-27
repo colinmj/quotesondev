@@ -12,6 +12,16 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
+		<div class="search-wrapper">
+
+	
+
+		<div class="left-quote">
+				<i class="fa fa-quote-left" aria-hidden="true"></i>
+			</div> <!-- closes left quote -->
+			
+			<div class="search-column-wrapper">
+
 			<header class="page-header">
 				<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
@@ -19,7 +29,7 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'search' ); ?>
+				<?php get_template_part( 'template-parts/content', 'search'); ?>
 
 			<?php endwhile; ?>
 
@@ -30,6 +40,14 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+
+</div>
+
+		<div class="right-quote">
+			  <i class="fa fa-quote-right" aria-hidden="true"></i>
+    </div><!-- closes right-->
+
+</div>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->

@@ -699,19 +699,91 @@ a {
       padding-top: 5px;
       padding-left: 5px;
       color: green; }
+      @media all and (min-width: 620px) {
+        .error404 .searching #search-button {
+          font-size: 22px;
+          padding-top: 4px; } }
     .error404 .searching .search-form fieldset {
       border: none;
       padding: 0;
       margin: 0; }
       .error404 .searching .search-form fieldset input {
-        border: 1px solid green;
+        border: 2px solid green;
         background: none;
-        font-family: 'Exo Light'; }
+        font-family: 'Exo Light';
+        color: #fff; }
+        @media all and (min-width: 620px) {
+          .error404 .searching .search-form fieldset input {
+            min-width: 250px;
+            min-height: 30px; } }
       .error404 .searching .search-form fieldset .search-submit {
         display: none; }
 
 .not-found {
   padding-left: 5px; }
+  @media all and (min-width: 1080px) {
+    .not-found {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      padding-left: 0; } }
+  .not-found .left-quote, .not-found .right-quote {
+    display: none; }
+    @media all and (min-width: 1080px) {
+      .not-found .left-quote, .not-found .right-quote {
+        display: inline; } }
+
+.search {
+  background: black; }
+  @media all and (min-width: 620px) {
+    .search .main-navigation {
+      padding-left: 15px; } }
+  .search .logo {
+    padding-left: 10px; }
+    @media all and (min-width: 620px) {
+      .search .logo {
+        padding-left: 20px; } }
+  @media all and (min-width: 1080px) {
+    .search .search-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
+  @media all and (min-width: 1080px) {
+    .search .search-column-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      max-width: 800px; } }
+  .search .content-area {
+    padding-left: 10px; }
+    @media all and (min-width: 620px) {
+      .search .content-area {
+        padding-left: 20px; } }
+  .search h1.page-title {
+    font-size: 26px;
+    color: #fff;
+    font-family: 'Exo Medium';
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 10px;
+    max-width: 98%; }
+  .search .entry-summary {
+    display: none; }
+  .search .entry-title a {
+    color: green;
+    text-decoration: none;
+    font-family: 'Exo Medium'; }
+  .search .entry-meta {
+    display: inline; }
+    .search .entry-meta p {
+      font-family: 'Exo Light'; }
 
 /*--------------------------------------------------------------
 # Media
@@ -873,7 +945,10 @@ a.red {
 .entry-title {
   width: auto;
   height: auto;
-  max-height: 20px; }
+  max-height: 20px;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content; }
 
 .entry-source {
   max-width: 210px; }
@@ -927,6 +1002,9 @@ a.red {
   padding-right: 5px; }
   .page .logo {
     padding-left: 5px; }
+  @media all and (min-width: 1080px) {
+    .page .entry-title {
+      font-size: 30px; } }
   .page .page-wrapper {
     margin-top: 50px;
     display: -webkit-box;
@@ -938,7 +1016,14 @@ a.red {
       .page .page-wrapper #post-107 {
         max-width: 60%; } }
     .page .page-wrapper .entry-content {
-      margin-top: 60px; }
+      margin-top: 60px;
+      font-size: 18px; }
+      .page .page-wrapper .entry-content p {
+        font-family: 'Exo Light';
+        color: #fff; }
+      .page .page-wrapper .entry-content a {
+        color: green;
+        text-decoration: none; }
     .page .page-wrapper .left-quote, .page .page-wrapper .right-quote {
       display: none; }
       @media all and (min-width: 1080px) {
@@ -1035,7 +1120,8 @@ a.red {
 .meta-container a {
   color: green;
   font-family: 'Exo Italic';
-  font-size: 18px; }
+  font-size: 18px;
+  text-decoration: none; }
 
 .meta-container .initial-title {
   min-width: -webkit-max-content;
