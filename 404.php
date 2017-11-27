@@ -20,7 +20,11 @@ get_header(); ?>
 				<div class="page-content">
 					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try a search?' ); ?></p>
 
-					<?php get_search_form(); ?>
+
+          <div class="searching">
+						<?php get_search_form(); ?>
+						<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+         </div>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 

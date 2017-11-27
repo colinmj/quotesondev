@@ -36,7 +36,14 @@
 
 //submit 
 
-.form-quote-wrapper{
+.form-quote-wrapper {
+
+	h1.entry-title {
+		@include desktop {
+			font-size: 40px;
+			margin-bottom: 50px;
+		}
+	}
 	
 	@include desktop {
 		display: flex;
@@ -52,16 +59,34 @@
 		.submit-form {
 			input{
 				max-width: 80%;
+				border: 2px solid green;
+				border-radius: 0;
+				background: none;
+				color: #fff;
+				font-family: 'Exo Light';
+
 				@include tablet {
 					max-width: 60%;
 				}
 			}
 			textarea {
 				max-width: 95%;
+				border: 2px solid green;
+				border-radius: 0;
+				background: none;
+				color: #fff;
+				font-family: 'Exo Light';
 			}
 			
 			.post-submit {
 				margin-top: 20px;
+				border: 1px solid green;
+				background: none;
+				color: green;
+				box-shadow: none;
+				font-size: 16px;
+				text-shadow: none;
+				font-family: 'Exo Light';
 			}
 			
 			.form-author, .form-quote, .form-where, .form-url {
@@ -71,6 +96,8 @@
 				
 				label {
 					padding-bottom: 10px;
+					color: #fff;
+					font-family: 'Exo Light';
 				}
 			}
 			
@@ -119,3 +146,34 @@
 		}
 	}
 }
+
+
+
+
+
+//404 
+
+.error404 {
+
+	.searching {
+		display: flex;
+
+	.search-form {
+		fieldset {
+			border: none;
+
+			input {
+				border: 1px solid green;
+			
+				background: none;
+				font-family: 'Exo Light';
+			}
+			.search-submit {
+				display: none;
+			}
+		  }
+			}
+		}
+	}
+
+

@@ -1,7 +1,7 @@
 
 
 
-.home, .single, .archive {
+.home, .single, .archive, .error404 {
   background: black;
 
 }
@@ -53,6 +53,92 @@
 .show {
   display: flex;
 }
+
+
+
+
+//fonts and styling 
+
+.meta-content {
+  p {
+    font-family: 'Exo Light';
+    font-size: 18px;
+    @include desktop {
+      
+    }
+  }
+
+  .meta-source-para {
+    font-family: 'Exo Italic';
+    font-size: 18px;
+  }
+}
+
+
+.meta-container {
+  a {
+    color: green;
+    font-family: 'Exo Italic';
+    font-size: 18px;
+  }
+}
+
+
+#new-quote-button {
+  border: 1px solid green;
+  color: green;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  font-family: 'Exo Light';
+  font-size: 16px;
+
+}
+
+
+.quote-container {
+  p {
+    color: #fff;
+    font-family: 'Exo Light';
+    font-size: 18px;
+    @include tablet {
+      font-size: 22px;
+    }
+    @include desktop {
+      font-size: 30px;
+    }
+  }
+}
+
+
+.entry-title {
+  font-family: 'Exo Light';
+
+  @include desktop {
+    font-size: 20px;
+  }
+}
+
+ 
+.entry-source-link {
+  a {
+    color: green;
+    text-decoration: none;
+    font-family: 'Exo Italic';
+    @include desktop {
+      font-size: 20px;
+    }
+  }
+}
+.entry-source {
+  color: #fff;
+  font-family: 'Exo Light';
+  @include desktop {
+    font-size: 20px;
+  }
+}
+
 
 
 

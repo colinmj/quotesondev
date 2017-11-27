@@ -21,7 +21,7 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 		<div class="quote-container"></div>
 
 		<div class="title-link-container hide ">
-			<div class="entry-title"></div>
+			<span class="entry-title"></span>
 			<div class="entry-source-link"></div>
 			<div class="entry-source"></div>
 		</div>
@@ -42,8 +42,8 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 	 </div><!-- left-quote -->
 
 	<div class="meta-content">
-	
-		<?php the_content();?>
+	 
+		<span id="meta-quote"><?php the_content();?></span>
    
 	
 	<div class="meta-container">	
