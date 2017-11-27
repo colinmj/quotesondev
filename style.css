@@ -221,6 +221,34 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo Italic';
+  src: url("../../fonts/Exo-LightItalic.eot");
+  src: url("Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-LightItalic.woff") format("woff"), url("../../fonts/Exo-LightItalic.ttf") format("truetype"), url("../../fonts/Exo-LightItalic.svg#Exo-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo Med Italic';
+  src: url("../../fonts/Exo-MediumItalic.eot");
+  src: url("../../fonts/Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-MediumItalic.woff") format("woff"), url("../../fonts/Exo-MediumItalic.ttf") format("truetype"), url("../../fonts/Exo-MediumItalic.svg#Exo-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo Light';
+  src: url("../../fonts/Exo-Light.eot");
+  src: url("../../fonts/Exo-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-Light.woff") format("woff"), url("../../fonts/Exo-Light.ttf") format("truetype"), url("../../fonts/Exo-Light.svg#Exo-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo Medium';
+  src: url("../../fonts/Exo-Medium.eot");
+  src: url("../../fonts/Exo-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-Medium.woff") format("woff"), url("../../fonts/Exo-Medium.ttf") format("truetype"), url("../../fonts/Exo-Medium.svg#Exo-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -568,6 +596,68 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+@media all and (min-width: 1080px) {
+  .form-quote-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+@media all and (min-width: 1080px) {
+  .form-quote-wrapper .form-wrapper {
+    width: auto;
+    min-width: 600px; } }
+
+.form-quote-wrapper .form-wrapper .submit-form input {
+  max-width: 80%; }
+  @media all and (min-width: 620px) {
+    .form-quote-wrapper .form-wrapper .submit-form input {
+      max-width: 60%; } }
+
+.form-quote-wrapper .form-wrapper .submit-form textarea {
+  max-width: 95%; }
+
+.form-quote-wrapper .form-wrapper .submit-form .post-submit {
+  margin-top: 20px; }
+
+.form-quote-wrapper .form-wrapper .submit-form .form-author, .form-quote-wrapper .form-wrapper .submit-form .form-quote, .form-quote-wrapper .form-wrapper .submit-form .form-where, .form-quote-wrapper .form-wrapper .submit-form .form-url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 0; }
+  .form-quote-wrapper .form-wrapper .submit-form .form-author label, .form-quote-wrapper .form-wrapper .submit-form .form-quote label, .form-quote-wrapper .form-wrapper .submit-form .form-where label, .form-quote-wrapper .form-wrapper .submit-form .form-url label {
+    padding-bottom: 10px; }
+
+.archive .archive-page-flex-wrapper {
+  padding-left: 10px;
+  padding-right: 10px; }
+  .archive .archive-page-flex-wrapper .left-quote-archive, .archive .archive-page-flex-wrapper .right-quote-archive {
+    display: none; }
+    @media all and (min-width: 1080px) {
+      .archive .archive-page-flex-wrapper .left-quote-archive, .archive .archive-page-flex-wrapper .right-quote-archive {
+        display: inline; }
+        .archive .archive-page-flex-wrapper .left-quote-archive i, .archive .archive-page-flex-wrapper .right-quote-archive i {
+          color: green;
+          font-size: 100px; } }
+  @media all and (min-width: 1080px) {
+    .archive .archive-page-flex-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
+  .archive .archive-page-flex-wrapper .left-quote, .archive .archive-page-flex-wrapper .right-quote {
+    display: none; }
+  .archive .archive-page-flex-wrapper .page-title {
+    border-bottom: 1px dashed #fff; }
+  .archive .archive-page-flex-wrapper .cats-and-tags {
+    border-bottom: 1px dashed #fff; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -597,17 +687,17 @@ object {
       padding-left: 0; } }
 
 .site-footer {
-  margin-top: 100px; }
-
-.quote-container p {
-  max-width: 85%; }
+  margin-top: 100px;
+  padding-bottom: 30px; }
 
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  padding-bottom: 50px;
+  padding-left: 10px; }
   @media all and (min-width: 1080px) {
     .main-navigation {
       -webkit-box-pack: end;
@@ -656,12 +746,6 @@ object {
         height: 110px; } }
 
 @media all and (min-width: 1080px) {
-  .content-wrapper {
-    max-width: 600px;
-    width: auto;
-    margin: 0 auto; } }
-
-@media all and (min-width: 1080px) {
   .show-button-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -700,7 +784,12 @@ object {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      font-size: 16px; }
+      font-size: 16px;
+      margin-top: 30px;
+      margin-bottom: 50px; }
+      .entry-meta .meta-content .meta-container p {
+        padding-right: 3px;
+        margin: 0; }
       .entry-meta .meta-content .meta-container .meta-source-para {
         max-width: 180px; }
         @media all and (min-width: 620px) {
@@ -716,8 +805,120 @@ object {
         color: green;
         font-size: 100px; } }
 
-.home {
-  background: gray; }
+.entry-title {
+  width: auto;
+  height: auto;
+  max-height: 20px; }
+
+.entry-source {
+  max-width: 220px; }
+  @media all and (min-width: 620px) {
+    .entry-source {
+      max-width: 600px; } }
+
+.initial-title {
+  width: auto; }
+
+.content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px; }
+  .content-wrapper .left-quote, .content-wrapper .right-quote {
+    display: none; }
+  @media all and (min-width: 1080px) {
+    .content-wrapper {
+      margin: 0 auto;
+      width: auto;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .content-wrapper .left-quote, .content-wrapper .right-quote {
+        display: inline; } }
+  .content-wrapper .ultra-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 600px; }
+    @media all and (min-width: 1080px) {
+      .content-wrapper .ultra-container {
+        font-size: 25px; } }
+    .content-wrapper .ultra-container .title-link-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 16px;
+      margin-top: 30px;
+      margin-bottom: 50px; }
+      .content-wrapper .ultra-container .title-link-container p {
+        padding-right: 3px;
+        margin: 0; }
+
+.page {
+  background: black;
+  padding-left: 5px;
+  padding-right: 5px; }
+  .page .logo {
+    padding-left: 5px; }
+  .page .page-wrapper {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    @media all and (min-width: 1080px) {
+      .page .page-wrapper #post-107 {
+        max-width: 60%; } }
+    .page .page-wrapper .entry-content {
+      margin-top: 60px; }
+    .page .page-wrapper .left-quote, .page .page-wrapper .right-quote {
+      display: none; }
+      @media all and (min-width: 1080px) {
+        .page .page-wrapper .left-quote, .page .page-wrapper .right-quote {
+          display: inline; } }
+
+@media all and (min-width: 1080px) {
+  .archive-flex-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+.archive-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: auto; }
+  .archive-wrapper .author-container {
+    max-width: 90%; }
+  .archive-wrapper .cat-container {
+    max-width: 90%; }
+  .archive-wrapper .tag-container {
+    max-width: 90%; }
+  @media all and (min-width: 1080px) {
+    .archive-wrapper {
+      max-width: 600px; } }
+  .archive-wrapper .left-quote, .archive-wrapper .right-quote {
+    display: none; }
+  .archive-wrapper a {
+    color: green;
+    text-decoration: none;
+    padding-right: 12px; }
+
+.home, .single, .archive {
+  background: black; }
 
 .site-info a {
   display: none; }
@@ -735,29 +936,8 @@ object {
   color: #fff;
   max-width: 80%; }
 
-.quote-container {
-  color: white; }
-  .quote-container p {
-    color: #fff; }
-    @media all and (min-width: 1080px) {
-      .quote-container p {
-        font-size: 25px; } }
-
 .brought .red {
   display: inline; }
-
-.content-wrapper {
-  margin-top: 30px; }
-
-.title-link-container, .meta-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 50px; }
-  .title-link-container p, .meta-container p {
-    padding-right: 3px;
-    margin: 0; }
 
 .hide {
   display: none; }
@@ -766,17 +946,3 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-
-.initial-title {
-  width: auto; }
-
-.entry-title {
-  width: auto;
-  height: auto;
-  max-height: 20px; }
-
-.entry-source {
-  max-width: 220px; }
-  @media all and (min-width: 620px) {
-    .entry-source {
-      max-width: 600px; } }

@@ -31,3 +31,91 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+
+
+//submit 
+
+.form-quote-wrapper{
+	
+	@include desktop {
+		display: flex;
+		justify-content: space-around;
+	}
+	.form-wrapper {
+		
+		@include desktop {
+			width: auto;
+			min-width: 600px;
+		}
+		
+		.submit-form {
+			input{
+				max-width: 80%;
+				@include tablet {
+					max-width: 60%;
+				}
+			}
+			textarea {
+				max-width: 95%;
+			}
+			
+			.post-submit {
+				margin-top: 20px;
+			}
+			
+			.form-author, .form-quote, .form-where, .form-url {
+				display: flex;
+				flex-direction: column;
+				padding: 15px 0;
+				
+				label {
+					padding-bottom: 10px;
+				}
+			}
+			
+		}
+		
+	}
+}
+
+
+//archive 
+.archive {
+	
+	.archive-page-flex-wrapper{
+		
+		.left-quote-archive, .right-quote-archive {
+			display: none;
+			
+			@include desktop {
+				display: inline;
+				
+				i {
+					color: green;
+					font-size: 100px;
+				}
+			}
+		}
+		
+		@include desktop {
+			display: flex;
+			justify-content: space-around;
+		}
+		
+		.left-quote, .right-quote {
+			display: none;
+		}
+		
+		padding-left: 10px;
+		padding-right: 10px;
+		
+		.page-title {
+			border-bottom: 1px dashed #fff;
+		}
+		
+		.cats-and-tags {
+			border-bottom: 1px dashed #fff;
+		}
+	}
+}

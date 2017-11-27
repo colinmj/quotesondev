@@ -1,13 +1,15 @@
 (function($){
-  
-    
-      $('#new-quote-button').on('click', function(event) {
+
+   $('#new-quote-button').on('click', function(event) {
          event.preventDefault();
          $('.entry-source-link').empty();
          $('.entry-source').empty();
          $('.entry-meta').empty();
+         $('.content-wrapper').addClass('show');
          $('.title-link-container').addClass('show');
          $('.ultra-container').addClass('show');
+         $('.left-quote').addClass('show');
+         $('.right-quote').addClass('show');
          
          $.ajax({
             method: 'get',
@@ -19,8 +21,12 @@
             var quote = (data[0].content.rendered);
             var link = (data[0]._qod_quote_source_url);
             var source = (data[0]._qod_quote_source);
-  
+            var slug = (data[0].slug);
+
            
+            $('.hentry').append(history.pushState(null, null, slug));
+            
+            
             
              
   

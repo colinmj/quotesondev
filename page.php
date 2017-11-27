@@ -21,4 +21,4 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 
-<?php  the_title( '<h2 class="entry-title">&mdash; ', '</h2' ); ?>
+

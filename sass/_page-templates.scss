@@ -5,98 +5,94 @@
 /* All Archives Page */
 
 /* Submit a Quote Page */
-  
+
 
 
 //Home Page
 
 .home {
   padding-left: 30px;
-
+  
   @include desktop {
     padding-left: 0;
   }
 }
 
 .site-footer {
-
+  
   margin-top: 100px;
+  padding-bottom: 30px;
+  
 }
 
-.quote-container {
-  p {
-    max-width: 85%;
-  }
-}
+
 
 //nav bar
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 50px;
+  padding-left: 10px;
+
   @include desktop {
     justify-content: flex-end;
   }
-
- 
+  
+  
   .brought {
     flex-basis: 100%;
-
+    
     @include tablet {
       flex-basis: 50%;
       flex-wrap: nowrap;
     }
-
+    
     @include desktop {
       flex-basis: 25%;
     }
   }
-
-   .menu {
-     display: flex;
-     a {
-       
-       padding-right: 15px;
-     }
-   }
+  
+  .menu {
+    display: flex;
+    a {
+      
+      padding-right: 15px;
+    }
+  }
 }
 
 
 
 //header
 .logo {
- padding-top: 30px;
- 
-@include desktop {
-  background: blue;
-  display: flex;
-  justify-content: center;
-  padding-top: 60px;
-}
-
- img {
-   max-width: 75%;
-
-   @include tablet {
-    max-width: 90%;
-    height: 80px;
-   }
-   @include desktop {
-     height: 110px;
-   }
- }
+  padding-top: 30px;
+  
+  @include desktop {
+    background: blue;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+  }
+  
+  img {
+    max-width: 75%;
+    
+    @include tablet {
+      max-width: 90%;
+      height: 80px;
+    }
+    @include desktop {
+      height: 110px;
+    }
+  }
 }
 
 
 //position for full width
-.content-wrapper {
-  @include desktop {
-    
-    max-width: 600px;
-    width: auto;
-    margin: 0 auto;
-  }
-}
 
+
+
+//simply the button
 .show-button-container {
   @include desktop {
     display: flex;
@@ -105,64 +101,61 @@
 }
 
 
-// .meta-content {
-//   p {
-//     @include desktop {
-//       font-size: 25px;
-//     }
-//   }
-// }
 
-
-
-
-
-//quotes
+//refresh
 
 .entry-meta {
   display: flex;
   flex-direction: row;
   
-
+  
   @include desktop {
     margin: 0 auto;
     // max-width: 600px;
     width: auto;
     justify-content: space-around;
   }
-
-
-   .meta-content {
+  
+  
+  .meta-content {
     
-     display: flex;
-     flex-direction: column;
-     max-width: 600px;
-
-     @include desktop {
-       font-size: 25px;
-     }
-
-
-     .meta-container {
-       display: flex;
-       font-size: 16px;
-
-        .meta-source-para {
-          max-width: 180px;
-
-          @include tablet {
-            max-width: 600px;
-          }
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    
+    @include desktop {
+      font-size: 25px;
+    }
+    
+    
+    .meta-container {
+      display: flex;
+      font-size: 16px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      
+      p {
+        padding-right: 3px;
+        margin: 0;
+      }
+      
+      .meta-source-para {
+        max-width: 180px;
+        
+        @include tablet {
+          max-width: 600px;
         }
-     }
-   }
+      }
+    }
+  }
 }
 
 
+//just the quotes
 .left-quote, .right-quote {
   display: none;
-
-
+  
+  
   @include desktop {
     display: inline;
     i {
@@ -171,3 +164,181 @@
     }
   }
 }
+
+
+
+
+
+//click 
+
+
+
+.entry-title {
+  width: auto;
+  height: auto;
+  max-height: 20px;
+}
+
+//on click
+.entry-source {
+  max-width: 220px;
+  
+  @include tablet {
+    max-width: 600px;
+  }
+}
+
+.initial-title {
+  width: auto;
+}
+
+
+
+//positioning
+
+.content-wrapper {
+  display: flex;
+  margin-top: 80px;
+  
+  .left-quote, .right-quote {
+    display: none;
+  }
+  
+  
+  @include desktop {
+    margin: 0 auto;
+    
+    width: auto;
+    justify-content: space-around;
+    
+    .left-quote, .right-quote {
+      display: inline;
+    }
+  }
+  
+  
+  
+  .ultra-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    
+    @include desktop {
+      font-size: 25px;
+    }
+    
+    
+    .title-link-container {
+      display: flex;
+      font-size: 16px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      
+      p {
+        padding-right: 3px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+
+//about page 
+
+.page {
+  background: black;
+  padding-left: 5px;
+  padding-right: 5px;
+  
+  .logo {
+    padding-left: 5px;
+  }
+  
+  
+  .page-wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    
+    #post-107 {
+      
+      @include desktop {
+        max-width: 60%;
+      }
+    }
+    
+    .entry-content {
+      margin-top: 60px;
+    }
+    
+    .left-quote, .right-quote {
+      display: none;
+      
+      @include desktop {
+        display: inline;
+      }
+    }
+    
+  }
+
+ 
+  
+}
+
+
+
+//archives
+
+
+
+
+
+.archive-flex-wrapper {
+
+  @include desktop {
+  display: flex;
+  justify-content: space-around;
+  
+  }
+}
+
+.archive-wrapper {
+ display: flex;
+ flex-direction: column;
+ width: auto;
+ padding-left: 10px;
+ padding-right: 10px;
+ height: auto;
+
+ .author-container{
+  max-width: 90%;
+ } 
+
+ .cat-container {
+   max-width: 90%
+ }
+
+ .tag-container {
+   max-width: 90%;
+ }
+
+ @include desktop{
+ max-width: 600px;
+ }
+
+ .left-quote, .right-quote {
+   display: none;
+ }
+
+  a {
+    color: green;
+    text-decoration: none;
+    padding-right: 12px;
+   
+   
+  }
+}
+ 
+
+

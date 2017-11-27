@@ -10,26 +10,30 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  
-<div class="content-wrapper">
+<div class="content-wrapper hide">
+
+			<div class="left-quote hide">
+				<i class="fa fa-quote-left" aria-hidden="true"></i>
+		  </div> <!-- closes left quote -->
 	 
    <div class="ultra-container hide">
-			<div class="left-quote">
-				<i class="fa fa-quote-left" aria-hidden="true"></i>
-		  </div>
-			<div class="quote-container"></div>
+			
+		<div class="quote-container"></div>
 
-			<div class="right-quote">
-			  <i class="fa fa-quote-right" aria-hidden="true"></i>
-     </div>
-			<!-- <i class="fa fa-quote-right" aria-hidden="true"></i> -->
-		</div>
 		<div class="title-link-container hide ">
 			<div class="entry-title"></div>
 			<div class="entry-source-link"></div>
 			<div class="entry-source"></div>
 		</div>
 
-</div>
+</div> <!-- closes ultra container -->
+
+    <div class="right-quote hide">
+			  <i class="fa fa-quote-right" aria-hidden="true"></i>
+    </div><!-- closes right-->
+
+
+</div> <!-- closes content wrapper -->
 
 <div class="entry-meta">
 
