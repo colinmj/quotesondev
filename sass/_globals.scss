@@ -6,6 +6,13 @@
 
 }
 
+.white {
+  p {
+  color: #fff;
+  display: inline;
+  }
+}
+
 
 .site-info {
   a {
@@ -71,6 +78,8 @@
   .meta-source-para {
     font-family: 'Exo Italic';
     font-size: 18px;
+    display: inline;
+    
   }
 }
 
@@ -80,6 +89,9 @@
     color: green;
     font-family: 'Exo Italic';
     font-size: 18px;
+  }
+  .initial-title {
+    min-width: max-content;
   }
 }
 

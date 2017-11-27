@@ -48,16 +48,16 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 	
 	<div class="meta-container">	
 
-	 <?php  the_title( '<p class="initial-title">&mdash; ', '</p' ); ?>
+	 <?php  the_title( '<p class="initial-title">&mdash;', '</p>' ); ?>
 
 		<?php if( $source && $source_url ): ?>
 
-			<span class="source"> <a href="<?php echo $source_url;  ?>">
+			<span class="source"> <span class="white"><p>,</p></span><a href="<?php echo $source_url;  ?>">
 			<?php echo $source; ?></a></span>
 
 		<?php elseif( $source ):   ?>
 
-		<span class="source"> <p class="meta-source-para"><?php echo $source; ?></p></span> 
+		<span class="source"><span class="white"><p>,</p></span> <p class="meta-source-para"><?php echo $source; ?></p></span> 
 
     <?php else: ?>
 		<span class="source"></span>

@@ -683,18 +683,35 @@ a {
   .archive .archive-page-flex-wrapper .cats-and-tags {
     border-bottom: 1px dashed #fff; }
 
-.error404 .searching {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .error404 .searching .search-form fieldset {
-    border: none; }
-    .error404 .searching .search-form fieldset input {
-      border: 1px solid green;
-      background: none;
-      font-family: 'Exo Light'; }
-    .error404 .searching .search-form fieldset .search-submit {
-      display: none; }
+.error404 {
+  padding-left: 15px; }
+  .error404 .page-title {
+    font-family: 'Exo Medium';
+    color: #fff; }
+  .error404 .page-content p {
+    color: #fff;
+    font-family: 'Exo Light'; }
+  .error404 .searching {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .error404 .searching #search-button {
+      padding-top: 5px;
+      padding-left: 5px;
+      color: green; }
+    .error404 .searching .search-form fieldset {
+      border: none;
+      padding: 0;
+      margin: 0; }
+      .error404 .searching .search-form fieldset input {
+        border: 1px solid green;
+        background: none;
+        font-family: 'Exo Light'; }
+      .error404 .searching .search-form fieldset .search-submit {
+        display: none; }
+
+.not-found {
+  padding-left: 5px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -954,15 +971,13 @@ a.red {
           flex-direction: column;
   width: auto;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 20px;
   height: auto; }
-  .archive-wrapper .author-container {
-    max-width: 90%; }
   .archive-wrapper .cat-container {
-    max-width: 90%; }
+    overflow-wrap: break-word; }
   .archive-wrapper .tag-container {
-    max-width: 90%; }
-  @media all and (min-width: 1080px) {
+    overflow-wrap: break-word; }
+  @media all and (min-width: 620px) {
     .archive-wrapper {
       max-width: 600px; } }
   .archive-wrapper .left-quote, .archive-wrapper .right-quote {
@@ -971,10 +986,15 @@ a.red {
     color: green;
     text-decoration: none;
     padding-right: 15px;
-    font-family: 'Exo Light'; }
+    font-family: 'Exo Light';
+    font-size: 18px; }
 
 .home, .single, .archive, .error404 {
   background: black; }
+
+.white p {
+  color: #fff;
+  display: inline; }
 
 .site-info a {
   display: none; }
@@ -1009,12 +1029,18 @@ a.red {
 
 .meta-content .meta-source-para {
   font-family: 'Exo Italic';
-  font-size: 18px; }
+  font-size: 18px;
+  display: inline; }
 
 .meta-container a {
   color: green;
   font-family: 'Exo Italic';
   font-size: 18px; }
+
+.meta-container .initial-title {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content; }
 
 #new-quote-button {
   border: 1px solid green;

@@ -34,9 +34,9 @@
             $('.entry-title').html('<p>&mdash; ' + title + '</p>');
   
             if (link) {
-            $('.entry-source-link').html('<a href="' + link + '"> ,' + source + '</a>');
-            } else {
-            $('.entry-source').html(',' + source);
+            $('.entry-source-link').html('<a href="' + link + '"><span class="white"><p>,</p></span>' + source + '</a>');
+            } else if (source) {
+            $('.entry-source').html('<span class="white">,</span>' + source);
             }
           });
       });
