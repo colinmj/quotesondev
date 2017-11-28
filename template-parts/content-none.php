@@ -20,8 +20,12 @@
 		<?php elseif ( is_search() ) : ?>
 
 			<p><?php echo esc_html( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.' ); ?></p>
-			<?php get_search_form(); ?>
 
+			<div class="searching">
+			<?php get_search_form(); ?>
+			<a id="search-button" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+			</div>
+			
 		<?php else : ?>
 
 			<p><?php echo esc_html( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.' ); ?></p>

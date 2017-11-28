@@ -6,13 +6,21 @@
 
 }
 
+.home, .single {
+  padding-left: 30px;
+  
+  @include desktop {
+    padding-left: 0;
+  }
+}
+
+
+//span class for commas
 .white {
   p {
   color: #fff;
   display: inline;
   }
-
- 
 }
 
 
@@ -42,6 +50,8 @@
 
     }
   }
+
+  
 
 .brought {
 

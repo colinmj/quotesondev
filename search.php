@@ -10,7 +10,7 @@ get_header(); ?>
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+		
 
 		<div class="search-wrapper">
 
@@ -19,6 +19,8 @@ get_header(); ?>
 		<div class="left-quote">
 				<i class="fa fa-quote-left" aria-hidden="true"></i>
 			</div> <!-- closes left quote -->
+
+			<?php if ( have_posts() ) : ?>
 			
 			<div class="search-column-wrapper">
 
@@ -37,10 +39,14 @@ get_header(); ?>
 
 		<?php else : ?>
 
+			
+
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
 
+		
+		
 </div>
 
 		<div class="right-quote">

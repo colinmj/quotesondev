@@ -1,0 +1,99 @@
+//archive template
+.archive {
+	
+	.archive-page-flex-wrapper{
+		
+		.left-quote-archive, .right-quote-archive {
+			display: none;
+			
+			@include desktop {
+				display: inline;
+				
+				i {
+					color: green;
+					font-size: 100px;
+				}
+			}
+		}
+		
+		@include desktop {
+			display: flex;
+			justify-content: space-around;
+		}
+		
+		.left-quote, .right-quote {
+			display: none;
+		}
+		
+		padding-left: 10px;
+		padding-right: 10px;
+		
+		.page-title {
+			border-bottom: 1px dashed #fff;
+		}
+		
+		.cats-and-tags {
+			border-bottom: 1px dashed #fff;
+		}
+	}
+}
+
+
+//Archive page
+
+.archive-flex-wrapper {
+  
+  h1 {
+    color: #fff;
+    font-family: 'Exo Light';
+  }
+  
+  h2 {
+    color: #fff;
+    font-family:'Exo Medium';
+  }
+  
+  @include desktop {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+}
+
+.archive-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 20px;
+  height: auto;
+  
+  
+  
+  .cat-container {
+    overflow-wrap: break-word;
+  }
+  
+  .tag-container {
+    overflow-wrap: break-word;
+    
+  }
+  
+  @include tablet{
+    max-width: 600px;
+  }
+  
+  .left-quote, .right-quote {
+    display: none;
+  }
+  
+  a {
+    color: green;
+    text-decoration: none;
+    padding-right: 15px;
+    font-family: 'Exo Light';
+    font-size: 18px;
+    
+    
+  }
+}

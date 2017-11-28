@@ -107,206 +107,30 @@
 }
 
 
-//archive 
-.archive {
-	
-	.archive-page-flex-wrapper{
-		
-		.left-quote-archive, .right-quote-archive {
-			display: none;
-			
-			@include desktop {
-				display: inline;
-				
-				i {
-					color: green;
-					font-size: 100px;
-				}
-			}
-		}
-		
-		@include desktop {
-			display: flex;
-			justify-content: space-around;
-		}
-		
-		.left-quote, .right-quote {
-			display: none;
-		}
-		
-		padding-left: 10px;
-		padding-right: 10px;
-		
-		.page-title {
-			border-bottom: 1px dashed #fff;
-		}
-		
-		.cats-and-tags {
-			border-bottom: 1px dashed #fff;
-		}
-	}
+//submit form 
+.thanks {
+	color: #fff;
+	font-family: 'Exo Light';
+}
+
+.refresh {
+	background: none;
+	border: 2px solid green;
+	box-shadow: none;
+	text-shadow: none;
+	color: green;
+	font-family: 'Exo Light';
 }
 
 
 
 
 
-//404 
-
-.error404 {
-	
-	padding-left: 15px;
-	
-	.page-title {
-		font-family: 'Exo Medium';
-		color: #fff;
-	}
-	
-	.page-content {
-		p {
-			color: #fff;
-			font-family: 'Exo Light';
-		}
-	}
-	
-	.searching {
-		display: flex;
-		
-		#search-button {
-			padding-top: 5px;
-			padding-left: 5px;
-			color: green;
-			
-			@include tablet {
-				font-size: 22px;
-				padding-top: 4px;
-			}
-		}
-		
-		.search-form {
-			fieldset {
-				border: none;
-				padding: 0;
-				margin: 0;
-				
-				input {
-					border: 2px solid green;
-					background: none;
-					font-family: 'Exo Light';
-					color: #fff;
-					
-					@include tablet {
-						min-width: 250px;
-						min-height: 30px;
-					}
-				}
-				.search-submit {
-					display: none;
-				}
-				
-				
-			}
-		}
-	}
-}
-
-.not-found {
-	padding-left: 5px;
-	
-	@include desktop {
-		display: flex;
-		justify-content: space-around;
-		padding-left: 0;
-	}
-	
-	.left-quote, .right-quote {
-		display: none;
-		
-		@include desktop {
-			display: inline;
-		}
-	}
-}
 
 
 
-//search 
 
-.search {
-	background: black;
-	
-	.main-navigation {
-		
-		@include tablet {
-			padding-left: 15px;
-		}
-	}
-	
-	
-	.logo {
-		padding-left: 10px;
-		
-		@include tablet {
-			padding-left: 20px;
-		}
-	}
-	
-	.search-wrapper{
-		
-		@include desktop {
-			display: flex;
-			justify-content: space-around;
-		}
-	}
-	
-	.search-column-wrapper {
-		
-		@include desktop {
-			display: flex;
-			flex-direction: column;
-			max-width: 800px;
-			
-		}
-		
-	}
-	
-	.content-area {
-		padding-left: 10px;
-		
-		@include tablet {
-			padding-left: 20px;
-		}
-	}
-	
-	h1.page-title{
-		font-size: 26px;
-		color: #fff;
-		font-family: 'Exo Medium';
-		border-bottom: 1px dotted #fff;
-		padding-bottom: 10px;
-		max-width: 98%;
-	}
-	
-	.entry-summary {
-		display: none;
-	}
-	
-	.entry-title {
-		a {
-			color: green;
-			text-decoration: none;
-			font-family: 'Exo Medium';
-		}
-	}
-	
-	.entry-meta {
-		display: inline;
-		p {
-			font-family: 'Exo Light';
-			
-			
-		}
-	}
-}
+
+
 
 

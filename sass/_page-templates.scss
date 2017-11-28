@@ -18,6 +18,7 @@
   }
 }
 
+//footer
 .site-footer {
   
   margin-top: 100px;
@@ -33,20 +34,20 @@
   flex-wrap: wrap;
   padding-bottom: 50px;
   
-  color: green;
-
+  color: #00cc00;
+  
   #primary-menu {
     li {
       a {
-      color: green;
-      font-family: 'Exo Light';
-      border-right: 1px solid #fff;
-      padding-left: 8px;
-     }
-     
+        color: #00cc00;
+        font-family: 'Exo Light';
+        border-right: 1px solid #fff;
+        padding-left: 8px;
+      }
+      
     }
   }
-
+  
   @include desktop {
     justify-content: flex-end;
   }
@@ -66,6 +67,11 @@
     @include desktop {
       flex-basis: 25%;
     }
+    
+    .red {
+      display: inline;
+      color: #00cc00;
+    }
   }
   
   .menu {
@@ -77,9 +83,9 @@
   }
 }
 
-a.red {
-  color: green;
-}
+
+
+
 
 
 
@@ -88,7 +94,7 @@ a.red {
   padding-top: 30px;
   
   @include desktop {
-   
+    
     display: flex;
     justify-content: center;
     padding-top: 60px;
@@ -107,11 +113,6 @@ a.red {
   }
 }
 
-
-//position for full width
-
-
-
 // button
 .show-button-container {
   @include desktop {
@@ -127,16 +128,16 @@ a.red {
 .entry-meta {
   display: flex;
   flex-direction: row;
-
+  
   #meta-quote {
     p {
       @include desktop {
-      font-size: 35px;
+        font-size: 35px;
       }
     }
   }
   
- 
+  
   
   @include desktop {
     margin: 0 auto;
@@ -152,7 +153,7 @@ a.red {
     flex-direction: column;
     max-width: 600px;
     
-   
+    
     
     
     .meta-container {
@@ -178,7 +179,7 @@ a.red {
 }
 
 
-//just the quotes
+//quotes
 .left-quote, .right-quote {
   display: none;
   
@@ -186,7 +187,7 @@ a.red {
   @include desktop {
     display: inline;
     i {
-      color: green;
+      color: #00cc00;
       font-size: 100px;
     }
   }
@@ -197,9 +198,6 @@ a.red {
 
 
 //click 
-
-
-
 .entry-title {
   width: auto;
   height: auto;
@@ -208,7 +206,7 @@ a.red {
   
 }
 
-//on click
+
 .entry-source {
   max-width: 210px;
   
@@ -219,7 +217,7 @@ a.red {
 
 .initial-title {
   width: auto;
- 
+  
 }
 
 
@@ -274,127 +272,6 @@ a.red {
 
 
 
-//about page 
-
-.page {
-  background: black;
-  padding-left: 5px;
-  padding-right: 5px;
-  
-  .logo {
-    padding-left: 5px;
-  }
-
-  .entry-title {
-    @include desktop {
-      font-size: 30px;
-    }
-  }
-  
-  
-  .page-wrapper {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    
-    #post-107 {
-      
-      @include desktop {
-        max-width: 60%;
-      }
-    }
-    
-    .entry-content {
-      margin-top: 60px;
-      font-size: 18px;
-
-    
-      p {
-        font-family: 'Exo Light';
-        color: #fff;
-      }
-      a {
-        color: green;
-        text-decoration: none;
-      }
-    }
-    
-    .left-quote, .right-quote {
-      display: none;
-      
-      @include desktop {
-        display: inline;
-      }
-    }
-    
-  }
-
- 
-  
-}
 
 
 
-//archives
-
-
-
-
-
-.archive-flex-wrapper {
-
-  h1 {
-    color: #fff;
-    font-family: 'Exo Light';
-  }
-
-  h2 {
-    color: #fff;
-    font-family:'Exo Medium';
-  }
-
-  @include desktop {
-  display: flex;
-  justify-content: space-around;
-  
-  }
-}
-
-.archive-wrapper {
- display: flex;
- flex-direction: column;
- width: auto;
- padding-left: 10px;
- padding-right: 20px;
- height: auto;
-
- 
-
- .cat-container {
-   overflow-wrap: break-word;
- }
-
- .tag-container {
-   overflow-wrap: break-word;
-   
- }
-
- @include tablet{
- max-width: 600px;
- }
-
- .left-quote, .right-quote {
-   display: none;
- }
-
-  a {
-    color: green;
-    text-decoration: none;
-    padding-right: 15px;
-    font-family: 'Exo Light';
-    font-size: 18px;
-   
-   
-  }
-}
- 

@@ -30,7 +30,7 @@ get_header(); ?>
 
           <div class="searching">
 						<?php get_search_form(); ?>
-						<a id="search-button" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+						<a id="search-button" href="<?php echo esc_html('Search'); ?>"><i class="fa fa-search" aria-hidden="true"></i></a>
          </div>
 				</div><!-- .page-content -->
 

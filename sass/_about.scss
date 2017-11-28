@@ -1,0 +1,56 @@
+
+//about page 
+
+.page {
+  background: black;
+  padding-left: 5px;
+  padding-right: 5px;
+  
+  .logo {
+    padding-left: 5px;
+  }
+  
+  .entry-title {
+    @include desktop {
+      font-size: 30px;
+    }
+  }
+  
+  
+  .page-wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    
+    #post-107 {
+      
+      @include desktop {
+        max-width: 60%;
+      }
+    }
+    
+    .entry-content {
+      margin-top: 60px;
+      font-size: 18px;
+      
+      
+      p {
+        font-family: 'Exo Light';
+        color: #fff;
+      }
+      a {
+        color: green;
+        text-decoration: none;
+      }
+    }
+    
+    .left-quote, .right-quote {
+      display: none;
+      
+      @include desktop {
+        display: inline;
+      }
+    }
+    
+  }
+}

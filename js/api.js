@@ -22,8 +22,10 @@
             var link = (data[0]._qod_quote_source_url);
             var source = (data[0]._qod_quote_source);
             var slug = (data[0].slug);
+            
 
            
+
             $('.hentry').append(history.pushState(null, null, slug));
             
             
@@ -38,7 +40,10 @@
             } else if (source) {
             $('.entry-source').html('<span class="white">,</span>' + source);
             }
-          });
+          }).fail(function() {
+            $('quote-container').html('No dice');
+
+          })
       });
   
   
@@ -67,8 +72,8 @@
            }
         }).done( function() {
            $('.submit-form').hide();
-           $('.form-wrapper').append('<p class="thanks">Thanks for submitting your comment yo</p>');
-           $('.form-wrapper').append('<button class="refresh"> Click Me </button>');
+           $('.form-wrapper').append('<p class="thanks">Thanks for submitting your quote!</p>');
+           $('.form-wrapper').append('<button class="refresh"> Click Me to Submit Again</button>');
   
            $('.refresh').on('click', function(){
               $('.submit-form').show().trigger('reset');
