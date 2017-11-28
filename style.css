@@ -596,13 +596,15 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
-@media all and (min-width: 1080px) {
-  .form-quote-wrapper h1.entry-title {
-    font-size: 40px;
-    margin-bottom: 50px; } }
+.logged-in .form-quote-wrapper h1.entry-title {
+  padding-left: 5px; }
+  @media all and (min-width: 1080px) {
+    .logged-in .form-quote-wrapper h1.entry-title {
+      font-size: 40px;
+      margin-bottom: 50px; } }
 
 @media all and (min-width: 1080px) {
-  .form-quote-wrapper {
+  .logged-in .form-quote-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -610,53 +612,56 @@ a {
         justify-content: space-around; } }
 
 @media all and (min-width: 1080px) {
-  .form-quote-wrapper .form-wrapper {
+  .logged-in .form-quote-wrapper .form-wrapper {
     width: auto;
     min-width: 600px; } }
 
-.form-quote-wrapper .form-wrapper .submit-form input {
-  max-width: 80%;
-  border: 2px solid green;
-  border-radius: 0;
-  background: none;
-  color: #fff;
-  font-family: 'Exo Light'; }
-  @media all and (min-width: 620px) {
-    .form-quote-wrapper .form-wrapper .submit-form input {
-      max-width: 60%; } }
-
-.form-quote-wrapper .form-wrapper .submit-form textarea {
-  max-width: 95%;
-  border: 2px solid green;
-  border-radius: 0;
-  background: none;
-  color: #fff;
-  font-family: 'Exo Light'; }
-
-.form-quote-wrapper .form-wrapper .submit-form .post-submit {
-  margin-top: 20px;
-  border: 1px solid green;
-  background: none;
-  color: green;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-size: 16px;
-  text-shadow: none;
-  font-family: 'Exo Light'; }
-
-.form-quote-wrapper .form-wrapper .submit-form .form-author, .form-quote-wrapper .form-wrapper .submit-form .form-quote, .form-quote-wrapper .form-wrapper .submit-form .form-where, .form-quote-wrapper .form-wrapper .submit-form .form-url {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 15px 0; }
-  .form-quote-wrapper .form-wrapper .submit-form .form-author label, .form-quote-wrapper .form-wrapper .submit-form .form-quote label, .form-quote-wrapper .form-wrapper .submit-form .form-where label, .form-quote-wrapper .form-wrapper .submit-form .form-url label {
-    padding-bottom: 10px;
+.logged-in .form-quote-wrapper .form-wrapper .submit-form {
+  padding-left: 10px; }
+  .logged-in .form-quote-wrapper .form-wrapper .submit-form input {
+    max-width: 80%;
+    border: 2px solid green;
+    border-radius: 0;
+    background: none;
     color: #fff;
     font-family: 'Exo Light'; }
+    @media all and (min-width: 620px) {
+      .logged-in .form-quote-wrapper .form-wrapper .submit-form input {
+        max-width: 60%; } }
+  .logged-in .form-quote-wrapper .form-wrapper .submit-form textarea {
+    max-width: 95%;
+    min-width: 80%;
+    border: 2px solid green;
+    border-radius: 0;
+    background: none;
+    color: #fff;
+    font-family: 'Exo Light'; }
+    @media all and (min-width: 620px) {
+      .logged-in .form-quote-wrapper .form-wrapper .submit-form textarea {
+        min-width: 500px; } }
+  .logged-in .form-quote-wrapper .form-wrapper .submit-form .post-submit {
+    margin-top: 20px;
+    border: 1px solid green;
+    background: none;
+    color: green;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-size: 16px;
+    text-shadow: none;
+    font-family: 'Exo Light'; }
+  .logged-in .form-quote-wrapper .form-wrapper .submit-form .form-author, .logged-in .form-quote-wrapper .form-wrapper .submit-form .form-quote, .logged-in .form-quote-wrapper .form-wrapper .submit-form .form-where, .logged-in .form-quote-wrapper .form-wrapper .submit-form .form-url {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px 0; }
+    .logged-in .form-quote-wrapper .form-wrapper .submit-form .form-author label, .logged-in .form-quote-wrapper .form-wrapper .submit-form .form-quote label, .logged-in .form-quote-wrapper .form-wrapper .submit-form .form-where label, .logged-in .form-quote-wrapper .form-wrapper .submit-form .form-url label {
+      padding-bottom: 10px;
+      color: #fff;
+      font-family: 'Exo Light'; }
 
 .thanks {
   color: #fff;
@@ -669,6 +674,36 @@ a {
           box-shadow: none;
   text-shadow: none;
   color: green;
+  font-family: 'Exo Light'; }
+
+@media all and (min-width: 1080px) {
+  .page-id-111:not(.logged-in) .form-quote-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+.page-id-111:not(.logged-in) .form-quote-wrapper .form-wrapper p {
+  color: #fff;
+  font-family: 'Exo Light';
+  padding-top: 10px;
+  padding-left: 5px;
+  margin-bottom: 0;
+  text-transform: uppercase; }
+
+.page-id-111:not(.logged-in) .form-quote-wrapper .form-wrapper a {
+  color: #00cc00;
+  text-decoration: none;
+  padding-top: 0;
+  text-transform: none; }
+
+@media all and (min-width: 1080px) {
+  .page-id-111:not(.logged-in) .form-quote-wrapper .form-wrapper {
+    min-width: 600px; } }
+
+.page-id-111:not(.logged-in) .form-quote-wrapper #no-post {
+  color: #fff;
   font-family: 'Exo Light'; }
 
 /*--------------------------------------------------------------
@@ -985,6 +1020,13 @@ object {
     .entry-source {
       font-size: 20px; } }
 
+nav.number-pagination {
+  padding-top: 5px; }
+  nav.number-pagination a {
+    color: #00cc00;
+    font-family: 'Exo Light';
+    text-decoration: none; }
+
 .error404 {
   padding-left: 15px; }
   .error404 .page-title {
@@ -1058,7 +1100,10 @@ object {
   .archive .archive-page-flex-wrapper .left-quote, .archive .archive-page-flex-wrapper .right-quote {
     display: none; }
   .archive .archive-page-flex-wrapper .page-title {
-    border-bottom: 1px dashed #fff; }
+    border-bottom: 1px dashed #fff;
+    padding-bottom: 5px;
+    font-family: 'Exo Medium';
+    color: #fff; }
   .archive .archive-page-flex-wrapper .cats-and-tags {
     border-bottom: 1px dashed #fff; }
 
@@ -1105,6 +1150,9 @@ object {
     padding-right: 15px;
     font-family: 'Exo Light';
     font-size: 18px; }
+    @media all and (min-width: 1080px) {
+      .archive-wrapper a {
+        font-size: 22px; } }
 
 .search {
   background: black; }

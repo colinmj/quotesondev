@@ -4,7 +4,6 @@
  *
  * @package QOD_Starter_Theme
  */
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -28,7 +27,7 @@ get_header(); ?>
 
      
 
-    <!-- <div class="form-wrapper"> -->
+    
    
 
       <form name="submit-form" class="submit-form">
@@ -56,17 +55,26 @@ get_header(); ?>
 
         <button type="button" class="post-submit">Submit Quote</button>
       </form>
-    </div>
+    </div> <!-- closes form wrapper -->
+
+
     <div class="right-quote">
 			  <i class="fa fa-quote-right" aria-hidden="true"></i>
     </div><!-- closes right-->
-</div> <!-- closes for quote wrapper-->
+</div> <!-- closes form quote wrapper-->
 
 <?php else: ?>
 
 <p> you shall not post! </p>
 
 <p> <?php echo sprintf( '<a href="%1s">%2s</a>', esc_url( wp_login_url()), 'Click here to login' ); ?> </p>
+
+</div> <!--closes form wrapper -->
+
+<div class="right-quote">
+			  <i class="fa fa-quote-right" aria-hidden="true"></i>
+    </div><!-- closes right-->
+</div> <!-- closes for quote wrapper-->
 
 <?php endif; ?>
 

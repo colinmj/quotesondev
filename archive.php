@@ -4,7 +4,6 @@
  *
  * @package QOD_Starter_Theme
  */
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -41,6 +40,8 @@ get_header(); ?>
 			</div>
      
 			<?php endwhile; ?>
+
+			<?php qod_numbered_pagination(); ?>
 	 
    </div> <!-- archive column wrapper -->
 	 

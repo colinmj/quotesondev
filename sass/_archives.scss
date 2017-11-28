@@ -29,7 +29,10 @@
 		padding-right: 10px;
 		
 		.page-title {
-			border-bottom: 1px dashed #fff;
+      border-bottom: 1px dashed #fff;
+      padding-bottom: 5px;
+      font-family: 'Exo Medium';
+      color: #fff;
 		}
 		
 		.cats-and-tags {
@@ -70,6 +73,8 @@
   
   
   
+  
+  
   .cat-container {
     overflow-wrap: break-word;
   }
@@ -94,6 +99,12 @@
     font-family: 'Exo Light';
     font-size: 18px;
     
-    
+    @include desktop {
+      font-size: 22px;
+    }
   }
 }
+
+
+
+

@@ -5,6 +5,22 @@
  * @package QOD_Starter_Theme
  */
 
+ function alter_archive_posts( $query ) {
+     if ( $query->is_archive() && $query->is_main_query() ) {
+         $query->set( 'posts_per_page', 5);
+     }
+ }
+
+ add_action('pre_get_posts', 'alter_archive_posts');
+
+ function alter_search_results( $query ) {
+     if ( $query->is_search() && $query->is_main_query() ) {
+         $query->set( 'posts_per_page', 10 );
+     }
+ }
+
+ add_action( 'pre_get_posts', 'alter_search_results');
+
 
 
 /**

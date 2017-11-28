@@ -35,74 +35,84 @@
 
 
 //submit 
-
-.form-quote-wrapper {
+.logged-in {
 	
-	h1.entry-title {
-		@include desktop {
-			font-size: 40px;
-			margin-bottom: 50px;
-		}
-	}
 	
-	@include desktop {
-		display: flex;
-		justify-content: space-around;
-	}
-	.form-wrapper {
+	.form-quote-wrapper {
 		
-		@include desktop {
-			width: auto;
-			min-width: 600px;
+		h1.entry-title {
+			padding-left: 5px;
+			@include desktop {
+				font-size: 40px;
+				margin-bottom: 50px;
+			}
 		}
 		
-		.submit-form {
-			input{
-				max-width: 80%;
-				border: 2px solid green;
-				border-radius: 0;
-				background: none;
-				color: #fff;
-				font-family: 'Exo Light';
-				
-				@include tablet {
-					max-width: 60%;
-				}
-			}
-			textarea {
-				max-width: 95%;
-				border: 2px solid green;
-				border-radius: 0;
-				background: none;
-				color: #fff;
-				font-family: 'Exo Light';
+		@include desktop {
+			display: flex;
+			justify-content: space-around;
+		}
+		.form-wrapper {
+			
+			@include desktop {
+				width: auto;
+				min-width: 600px;
 			}
 			
-			.post-submit {
-				margin-top: 20px;
-				border: 1px solid green;
-				background: none;
-				color: green;
-				box-shadow: none;
-				font-size: 16px;
-				text-shadow: none;
-				font-family: 'Exo Light';
-			}
-			
-			.form-author, .form-quote, .form-where, .form-url {
-				display: flex;
-				flex-direction: column;
-				padding: 15px 0;
-				
-				label {
-					padding-bottom: 10px;
+			.submit-form {
+				padding-left: 10px;
+				input{
+					max-width: 80%;
+					border: 2px solid green;
+					border-radius: 0;
+					background: none;
 					color: #fff;
 					font-family: 'Exo Light';
+					
+					@include tablet {
+						max-width: 60%;
+					}
 				}
+				textarea {
+					max-width: 95%;
+					min-width: 80%;
+					border: 2px solid green;
+					border-radius: 0;
+					background: none;
+					color: #fff;
+					font-family: 'Exo Light';
+					
+					@include tablet {
+						min-width: 500px;
+					}
+				}
+				
+				.post-submit {
+					margin-top: 20px;
+					border: 1px solid green;
+					background: none;
+					color: green;
+					box-shadow: none;
+					font-size: 16px;
+					text-shadow: none;
+					font-family: 'Exo Light';
+				}
+				
+				.form-author, .form-quote, .form-where, .form-url {
+					display: flex;
+					flex-direction: column;
+					padding: 15px 0;
+					
+					label {
+						padding-bottom: 10px;
+						color: #fff;
+						font-family: 'Exo Light';
+					}
+				}
+				
 			}
 			
 		}
-		
 	}
 }
 
@@ -120,6 +130,51 @@
 	text-shadow: none;
 	color: green;
 	font-family: 'Exo Light';
+}
+
+
+//submit not logged in
+
+.page-id-111:not(.logged-in) {
+	
+	.form-quote-wrapper {
+		
+		@include desktop {
+			display: flex;
+			justify-content: space-around;
+		}
+		
+		.form-wrapper {
+			
+			p {
+				color: #fff;
+				font-family: 'Exo Light';
+				padding-top: 10px;
+				padding-left: 5px;
+				margin-bottom: 0;
+				text-transform: uppercase;
+			}
+			
+			a {
+				color: #00cc00;
+				text-decoration: none;
+				padding-top: 0;
+				text-transform: none;
+			}
+			@include desktop {
+				min-width: 600px;
+			}
+		}
+		
+		
+		
+		#no-post {
+			color: #fff;
+			font-family: 'Exo Light';
+			
+		}
+		
+	}
 }
 
 
